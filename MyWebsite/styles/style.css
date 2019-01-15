@@ -1,0 +1,291 @@
+/*
+  style.css
+  Colours
+  *********
+
+  Black:        #000;
+  Darker Grey:  #222;
+  Dark Grey:    #333;
+  Gray:         #444;
+  Light Gray:   #eee;
+  Light Blue:   #00c0ff;
+  Dark Blue:    #0090bf;
+ */
+ /* Define vars for colors */
+:root {
+  --black: #000;
+  --white: #fff;
+  --darker-gray: #222;
+  --dark-gray: #333;
+  --gray: #444;
+  --light-gray: #eee;
+  --light-blue: #00c0ff;
+  --dark-blue: #0090bf;
+  --darker-blue: #1e728c;
+}
+/* ----------------------
+   General Styles
+   ---------------------- */
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* ----------------------
+   Typography
+   ---------------------- */
+h1, h2, h3 {
+  font-weight: 300;
+  margin: 0;
+  line-height: 45px;
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+  margin: 5px 0 5px0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 13px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+p.lead {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* ----------------------
+   Layout
+   ---------------------- */
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--black);
+}
+
+#logo {
+  display: block;
+  padding: 17px 0 16px 5px;
+  float: left;
+}
+
+#hero {
+  background: var(--light-blue);
+  color: var(--black);
+}
+
+#hero-title {
+  width: 520px;
+  padding: 60px 0;
+  float: left;
+}
+
+#hero-image {
+  float: right;
+  margin: 10px 0 -30px 0;
+}
+
+#lead-in {
+  margin-bottom: 30px;
+}
+#call-to-action {
+  margin: 40px 0;
+}
+
+#content {
+  padding: 100px 0;
+}
+
+#column-content {
+  width: 700px;
+  float: left;
+}
+
+/* ----------------------
+   Sidebar
+   ---------------------- */
+
+aside {
+  background: var(--gray);
+  width: 160px;
+  float: right;
+  color: #fff;
+  margin-left: 20px;
+  padding: 30px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+aside .widget {
+  margin: 10px 0;
+}
+
+aside .widget:nth-child(2) {
+   margin-top: 40px;
+}
+/* ----------------------
+   Navigation
+   ---------------------- */
+nav ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+  float: left;
+}
+ header nav ul li a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;  
+  padding: 20px;
+  border-left: solid 1px var(--darker-gray);
+}
+ 
+header nav ul li a:hover {
+  background: var(--darker-gray);
+}
+
+header nav ul li a:active {
+  -wekit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) insert;
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) insert;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) insert;
+}
+/* ----------------------
+   Buttons
+   ---------------------- */
+.btn {
+  width: auto;
+  background: var(--dark-blue);
+  border: solid 1px var(--darker-blue);
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  /* IE7 inline-block fix */
+  /* zoom: 1;
+  *display: inline; */
+  
+  margin: 0;
+  outline: none;
+  padding: 10px 20px 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  /* Fancy box shadows */ 
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) insert;
+     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) insert; 
+          box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) insert;
+          box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) insert;
+/* CSS3 animations */
+          -webkit-transition: background-color 0.15s ease-in-out;
+             -moz-transition: background-color 0.15s ease-in-out;
+               -o-transition: background-color 0.15s ease-in-out;
+                  transition: background-color 0.15s ease-in-out;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--darker-blue); 
+}
+.btn:active {
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) insert;
+     -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) insert;
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) insert;
+  color: #fff;
+}
+
+.btn-large {
+  padding: 22px 30px;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.btn-secondary {
+  font-size: 18px;
+}
+
+.btn-secondary:hover {
+  text-decoration: underline;
+}
+
+.btn-secondary:active {
+  position: relative;
+  top: 1px;
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+
+/* ----------------------
+   Global Styles
+   ---------------------- */
+
+.column {
+  float: left;
+  margin-right: 20px; 
+}
+
+.four {
+  width: 220px;
+}
+
+.last {
+  margin-right: 0;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
