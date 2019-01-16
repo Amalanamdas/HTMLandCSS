@@ -158,6 +158,50 @@ aside .widget {
 aside .widget:nth-child(2) {
    margin-top: 40px;
 }
+
+aside .widget h4 {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+aside .socials a {
+  position: relative;
+  margin-right: 5px;
+}
+
+aside .socials a:hover {
+  top: -1px;
+}
+
+/* ----------------------
+   2nd cta
+   ---------------------- */
+#secondary-cta {
+  background: var(--light-gray);
+  padding: 30px 0;
+}
+
+#secondary-cta h4 {
+  float: left;
+  font-weight: 200;
+  font-size: 24px;
+}
+
+
+
+#secondary-cta form {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------------------
+   Footer
+   ---------------------- */
+footer {
+  background-color: var(--dark-gray);
+}
 /* ----------------------
    Navigation
    ---------------------- */
@@ -264,6 +308,18 @@ header nav ul li a:active {
 /* ----------------------
    Global Styles
    ---------------------- */
+input {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+input [type="text"], [type="email"] {
+  position: relative;
+  padding: 10px 10px 11px;
+  border: solid 1px #ccc;
+  width: 220px;
+  margin: 0 -5px 0 0;
+}
 
 .column {
   float: left;
