@@ -200,7 +200,32 @@ aside .socials a:hover {
    Footer
    ---------------------- */
 footer {
-  background-color: var(--dark-gray);
+  background-color: var(--gray);
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer #copyright {
+  width: 280px;
+  float: left;
+}
+
+footer nav {
+  width: 340px;
+  float: right;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer nav a {
+  padding: 0 0 0 15px;
+}
+
+footer a:hover {
+  color: var(--light-blue);
 }
 /* ----------------------
    Navigation
@@ -284,6 +309,10 @@ header nav ul li a:active {
 
 .btn-secondary {
   font-size: 18px;
+}
+
+.btn-small {
+  font-weight: bold;
 }
 
 .btn-secondary:hover {
