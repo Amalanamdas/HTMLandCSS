@@ -11,18 +11,6 @@
   Light Blue:   #00c0ff;
   Dark Blue:    #0090bf;
  */
- /* Define vars for colors */
-:root {
-  --black: #000;
-  --white: #fff;
-  --darker-gray: #222;
-  --dark-gray: #333;
-  --gray: #444;
-  --light-gray: #eee;
-  --light-blue: #00c0ff;
-  --dark-blue: #0090bf;
-  --darker-blue: #1e728c;
-}
 /* ----------------------
    General Styles
    ---------------------- */
@@ -35,7 +23,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: var(--gray);
+  color: #444;
   margin: 0;
 }
 
@@ -50,7 +38,7 @@ h1, h2, h3 {
 
 h4, h5, h6 {
   font-weight: bold;
-  margin: 5px 0 5px0;
+  margin: 5px 0 5px;
 }
 
 h1 {
@@ -95,7 +83,7 @@ p.lead {
 }
 
 header {
-  background: var(--black);
+  background: #000;
 }
 
 #logo {
@@ -105,8 +93,8 @@ header {
 }
 
 #hero {
-  background: var(--light-blue);
-  color: var(--black);
+  background: #00c0ff;
+  color: #000;
 }
 
 #hero-title {
@@ -141,7 +129,7 @@ header {
    ---------------------- */
 
 aside {
-  background: var(--gray);
+  background: #444;
   width: 160px;
   float: right;
   color: #fff;
@@ -178,7 +166,7 @@ aside .socials a:hover {
    2nd cta
    ---------------------- */
 #secondary-cta {
-  background: var(--light-gray);
+  background: #eee;
   padding: 30px 0;
 }
 
@@ -200,7 +188,7 @@ aside .socials a:hover {
    Footer
    ---------------------- */
 footer {
-  background-color: var(--gray);
+  background-color: #444;
   color: #fff;
   padding: 50px 0;
 }
@@ -225,7 +213,7 @@ footer nav a {
 }
 
 footer a:hover {
-  color: var(--light-blue);
+  color: #00c0ff;
 }
 /* ----------------------
    Navigation
@@ -242,15 +230,15 @@ nav ul li {
 }
  header nav ul li a {
   display: block;
-  color: var(--white);
+  color: #fff;
   text-decoration: none;
   font-weight: bold;  
   padding: 20px;
-  border-left: solid 1px var(--darker-gray);
+  border-left: solid 1px #333;
 }
  
 header nav ul li a:hover {
-  background: var(--darker-gray);
+  background: #222;
 }
 
 header nav ul li a:active {
@@ -263,9 +251,9 @@ header nav ul li a:active {
    ---------------------- */
 .btn {
   width: auto;
-  background: var(--dark-blue);
-  border: solid 1px var(--darker-blue);
-  color: var(--white);
+  background: #0090bf;
+  border: solid 1px #1e728c;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   /* IE7 inline-block fix */
@@ -292,7 +280,7 @@ header nav ul li a:active {
 
 .btn:hover {
   color: #fff;
-  background-color: var(--darker-blue); 
+  background-color: #1e728c; 
 }
 .btn:active {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) insert;
